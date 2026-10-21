@@ -4,6 +4,7 @@ import { portfolioProjects, projectAsset, type Project } from './data/projects'
 
 const EMAIL = 'aliahmedsh05@gmail.com'
 const GITHUB = 'https://github.com/AliAhmedsh'
+const BASE = import.meta.env.BASE_URL.replace(/\/$/, '')
 const certificates = [
   { title: 'AdventureDart Game', date: 'February 2025', issuer: '724.ONE TECH', description: 'Recognition for successfully building and shipping a location-based real-world adventure game to iOS and Android, with team play, live leaderboards, and map-based gameplay.', code: 'CERT / AD / 2025' },
   { title: 'VEOR App', date: 'September 2024', issuer: '724.ONE TECH', description: 'Recognition for delivering a peer-to-peer emotional support product with real-time chat, anonymous listener matching, mood tracking, voice calls, and privacy-focused experiences.', code: 'CERT / VEOR / 2024' },
@@ -15,9 +16,10 @@ const capabilities = [
   { icon: Zap, label: 'AI systems', text: 'Useful AI features and automations built into real product workflows.' },
 ]
 
-function navigate(path: string) { window.history.pushState({}, '', path); window.dispatchEvent(new PopStateEvent('popstate')); window.scrollTo({ top: 0, behavior: 'smooth' }) }
-function usePath() { const [path, setPath] = useState(window.location.pathname); useEffect(() => { const update = () => setPath(window.location.pathname); window.addEventListener('popstate', update); return () => window.removeEventListener('popstate', update) }, []); return path }
-function AppLink({ to, children, className, onClick, ...props }: { to: string; children: React.ReactNode; className?: string; onClick?: () => void; 'aria-label'?: string }) { return <a href={to} className={className} {...props} onClick={(event) => { event.preventDefault(); onClick?.(); navigate(to) }}>{children}</a> }
+function routePath() { const path = window.location.pathname; return BASE && path.startsWith(BASE) ? path.slice(BASE.length) || '/' : path }
+function navigate(path: string) { window.history.pushState({}, '', `${BASE}${path}`); window.dispatchEvent(new PopStateEvent('popstate')); window.scrollTo({ top: 0, behavior: 'smooth' }) }
+function usePath() { const [path, setPath] = useState(routePath); useEffect(() => { const update = () => setPath(routePath()); window.addEventListener('popstate', update); return () => window.removeEventListener('popstate', update) }, []); return path }
+function AppLink({ to, children, className, onClick, ...props }: { to: string; children: React.ReactNode; className?: string; onClick?: () => void; 'aria-label'?: string }) { return <a href={`${BASE}${to}`} className={className} {...props} onClick={(event) => { event.preventDefault(); onClick?.(); navigate(to) }}>{children}</a> }
 
 function Shell({ children }: { children: React.ReactNode }) {
   const [menu, setMenu] = useState(false), [scrolled, setScrolled] = useState(false)

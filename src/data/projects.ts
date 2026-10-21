@@ -276,4 +276,4 @@ export const portfolioProjects: Project[] = [
   },
 ]
 
-export const projectAsset = (path: string) => `/projects/${path}`
+export const projectAsset = (path: string) => `${import.meta.env.BASE_URL}projects/${path}`
