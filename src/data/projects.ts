@@ -46,7 +46,7 @@ export const portfolioProjects: Project[] = [
       'iOS',
     ],
     displayMode: 'mobile',
-    coverImage: 'cutz2go/c2g-cover.png',
+    coverImage: 'cutz2go/c2g-cover-ai.png',
     media: [
       { type: 'video', url: 'cutz2go/c2g-demo.mp4', caption: 'App Demo' },
       { type: 'image', url: 'cutz2go/c2g-cover.png', caption: 'Cutz2Go App' },
@@ -73,7 +73,7 @@ export const portfolioProjects: Project[] = [
     category: 'Mobile App',
     tech: ['React Native', 'iOS', 'Android'],
     displayMode: 'mobile',
-    coverImage: 'care2home/c2h-cover.png',
+    coverImage: 'care2home/c2h-cover-ai.png',
     media: [
       { type: 'video', url: 'care2home/c2h-demo.mp4', caption: 'App Demo' },
       { type: 'image', url: 'care2home/c2h-cover.png', caption: 'Care2Home App' },
@@ -95,7 +95,7 @@ export const portfolioProjects: Project[] = [
     category: 'Mobile App',
     tech: ['React Native', 'Expo', 'Firebase', 'OpenAI', 'iOS', 'Android', 'Web'],
     displayMode: 'mobile',
-    coverImage: 'akasha/ak-cover.png',
+    coverImage: 'akasha/ak-cover-ai.png',
     media: [
       { type: 'video', url: 'akasha/ak-demo.mp4', caption: 'App Demo' },
       { type: 'image', url: 'akasha/ak-cover.png', caption: 'Akasha App' },
@@ -121,7 +121,7 @@ export const portfolioProjects: Project[] = [
     category: 'Web Application',
     tech: ['React'],
     displayMode: 'web',
-    coverImage: 'esports/es-cover.png',
+    coverImage: 'esports/es-cover-ai.png',
     media: [
       { type: 'video', url: 'esports/es-demo.mp4', caption: 'Platform Demo' },
       { type: 'image', url: 'esports/es-cover.png', caption: 'E-Sports Web App' },
@@ -143,7 +143,7 @@ export const portfolioProjects: Project[] = [
     category: 'Mobile App',
     tech: ['React Native', 'React', 'Rust', 'iOS', 'Android'],
     displayMode: 'mobile',
-    coverImage: 'recovery-copilot/rc-cover.png',
+    coverImage: 'recovery-copilot/rc-cover-ai.png',
     media: [
       { type: 'video', url: 'recovery-copilot/rc-demo.mp4', caption: 'App Demo' },
       { type: 'image', url: 'recovery-copilot/rc-dashboard.png', caption: 'Main Dashboard' },
@@ -181,7 +181,7 @@ export const portfolioProjects: Project[] = [
     category: 'Mobile App',
     tech: ['React Native', 'iOS', 'Android', 'API Integration', 'Firebase'],
     displayMode: 'mobile',
-    coverImage: 'lingowire/lw-cover.png',
+    coverImage: 'lingowire/lw-cover-ai.png',
     media: [
       { type: 'video', url: 'lingowire/lw-demo.mp4', caption: 'App Demo' },
       { type: 'image', url: 'lingowire/lw-partners.png', caption: 'Connect with a Partner' },
@@ -216,7 +216,7 @@ export const portfolioProjects: Project[] = [
       'Starstone is a blockchain-powered creature-collecting game built on Solana. Open booster packs to discover unique creatures, burn shards to evolve them through multiple tiers, and build your ultimate collection. Connect your wallet, jump in, and start building your squad.\n\nThe game blends dynamic collection mechanics with blockchain technology: purchase booster packs to acquire randomized shard tokens, evolve creatures by burning specific shards, and engage with a vibrant community of players crafting their Starstone collections. Features a live creature evolution system, channeling mechanic for passive shard generation, and a secure on-chain marketplace for trading creatures and shards.',
     category: 'Web Application',
     tech: ['React', 'Rust', 'Solana', 'Blockchain', 'Web3.js'],
-    coverImage: 'starstone/ss-cover.png',
+    coverImage: 'starstone/ss-cover-ai.png',
     media: [
       { type: 'video', url: 'starstone/ss-demo.mp4', caption: 'Gameplay Demo' },
       { type: 'image', url: 'starstone/ss-cover.png', caption: 'Hero — Collect, Evolve & Trade' },
@@ -252,7 +252,7 @@ export const portfolioProjects: Project[] = [
     category: 'Mobile App',
     tech: ['React Native', 'Firebase', 'JavaScript', 'Node.js', 'iOS', 'Android'],
     displayMode: 'mobile',
-    coverImage: 'veor/veor-cover.png',
+    coverImage: 'veor/veor-cover-ai.png',
     media: [
       { type: 'image', url: 'veor/veor-cover.png', caption: 'App Overview' },
       { type: 'image', url: 'veor/veor-connect.png', caption: 'Connect with a Listener' },
